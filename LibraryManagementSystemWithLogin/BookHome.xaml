@@ -1,0 +1,64 @@
+﻿<Window x:Class="FinalExamDhrutiben.BookHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalExamDhrutiben"
+        mc:Ignorable="d"
+        Title="Books" Height="Auto" Width="900">
+    <Grid HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2">
+
+            <Label HorizontalAlignment="Center" FontSize="25" FontWeight="Medium" Margin="10">Manage Books</Label>
+
+        </StackPanel>
+
+
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+            <Button x:Name="homeNavigate" Height="25" Width="80" Click="homeNavigate_Click" Margin="20 0 5 0" Background="CornflowerBlue" BorderThickness="0" FontWeight="SemiBold">Home</Button>
+            <TextBox x:Name="searchValue" Width="150" Height="25" Margin="45 0 0 0" ></TextBox>
+            <Button x:Name="searchBook" Height="25" Width="100" Click="searchBook_Click" Background="CornflowerBlue" BorderThickness="0" FontWeight="SemiBold">Search Book</Button>
+            <Button x:Name="clearFilter" Height="25" Width="100" Margin="5" Click="clearFilter_Click" Background="Chocolate" BorderThickness="0" FontWeight="SemiBold">Clear Filter</Button>
+            <Button x:Name="addBook" Height="25" Margin="180 50 50 50" Width="120" Click="addBook_Click" Background="CornflowerBlue" BorderThickness="0" FontWeight="SemiBold">Add New Book</Button>
+
+
+        </StackPanel>
+        <StackPanel x:Name="bookListPanel" Orientation="Horizontal" Grid.Row="2" Grid.Column="1" Margin="20" >
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <DataGrid x:Name="dataGridBooks"  AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="80" Header="Book ID" Binding="{Binding bookID}"/>
+                        <DataGridTextColumn Width="200" Header="Title" Binding="{Binding title}"/>
+                        <DataGridTextColumn Width="200" Header="Author" Binding="{Binding author}"/>
+                        <DataGridTextColumn Width="80" Header="Is Available" Binding="{Binding isAvailable}"/>
+                        <DataGridTextColumn x:Name="issuedTo" Width="150" Header="Issued To" Binding="{Binding issuedTo}"/>
+                        <DataGridTemplateColumn Header="" Width="80">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="returnBook" IsEnabled="{Binding isEnableReturn}" Click="returnBook_Click" Background="RosyBrown" BorderThickness="0" FontWeight="SemiBold">Return Book</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+            </ScrollViewer>
+
+        </StackPanel>
+        <StackPanel x:Name="noDataPanel" Orientation="Horizontal" Grid.Row="2" Grid.Column="1" Margin="20 0" Visibility="Collapsed">
+            <Label x:Name="noBooks" FontWeight="Bold" FontSize="20">Book(s) Not Found</Label>
+        </StackPanel>
+    </Grid>
+</Window>

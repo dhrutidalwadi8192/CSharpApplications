@@ -1,0 +1,14 @@
+D:\Conestoga\Software Development Techniques\midterm_exam\bin\Debug\net7.0\midterm_exam.exe
+D:\Conestoga\Software Development Techniques\midterm_exam\bin\Debug\net7.0\midterm_exam.deps.json
+D:\Conestoga\Software Development Techniques\midterm_exam\bin\Debug\net7.0\midterm_exam.runtimeconfig.json
+D:\Conestoga\Software Development Techniques\midterm_exam\bin\Debug\net7.0\midterm_exam.dll
+D:\Conestoga\Software Development Techniques\midterm_exam\bin\Debug\net7.0\midterm_exam.pdb
+D:\Conestoga\Software Development Techniques\midterm_exam\obj\Debug\net7.0\midterm_exam.GeneratedMSBuildEditorConfig.editorconfig
+D:\Conestoga\Software Development Techniques\midterm_exam\obj\Debug\net7.0\midterm_exam.AssemblyInfoInputs.cache
+D:\Conestoga\Software Development Techniques\midterm_exam\obj\Debug\net7.0\midterm_exam.AssemblyInfo.cs
+D:\Conestoga\Software Development Techniques\midterm_exam\obj\Debug\net7.0\midterm_exam.csproj.CoreCompileInputs.cache
+D:\Conestoga\Software Development Techniques\midterm_exam\obj\Debug\net7.0\midterm_exam.dll
+D:\Conestoga\Software Development Techniques\midterm_exam\obj\Debug\net7.0\refint\midterm_exam.dll
+D:\Conestoga\Software Development Techniques\midterm_exam\obj\Debug\net7.0\midterm_exam.pdb
+D:\Conestoga\Software Development Techniques\midterm_exam\obj\Debug\net7.0\midterm_exam.genruntimeconfig.cache
+D:\Conestoga\Software Development Techniques\midterm_exam\obj\Debug\net7.0\ref\midterm_exam.dll
